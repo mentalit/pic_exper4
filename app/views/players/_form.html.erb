@@ -12,8 +12,7 @@
   <% end %>
 
   <div>
-    <%= form.label :player_picture, style: "display: block" %>
-    <%= form.text_field :player_picture %>
+   <%= form.hidden_field :player_picture, value: @player.player_picture %>
   </div>
 
   <div>
