@@ -1,4 +1,3 @@
 class Player < ApplicationRecord
-
-	attribute :player_picture, :string, default: ''
+  has_one_attached :player_pcture
 end

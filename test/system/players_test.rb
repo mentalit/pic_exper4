@@ -14,7 +14,6 @@ class PlayersTest < ApplicationSystemTestCase
     visit players_url
     click_on "New player"
 
-    fill_in "Player picture", with: @player.player_picture
     click_on "Create Player"
 
     assert_text "Player was successfully created"
@@ -25,7 +24,6 @@ class PlayersTest < ApplicationSystemTestCase
     visit player_url(@player)
     click_on "Edit this player", match: :first
 
-    fill_in "Player picture", with: @player.player_picture
     click_on "Update Player"
 
     assert_text "Player was successfully updated"

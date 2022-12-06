@@ -1,7 +1,7 @@
 <div id="<%= dom_id player %>">
   <p>
-    <strong>Player picture:</strong>
-    <%= player.player_picture %>
+    <strong>Player pcture:</strong>
+    <%= link_to player.player_pcture.filename, player.player_pcture if player.player_pcture.attached? %>
   </p>
 
 </div>
